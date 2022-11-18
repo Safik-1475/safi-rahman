@@ -1,0 +1,593 @@
+/*================Poppins fonts ================ */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Poppins:wght@500&display=swap');
+
+/*================= remove by default styles ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/*================= html styles ================= */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*=====================css variables===================== */
+
+/*===================== body styles ===================== */
+body {
+    background-color: #04b4e0;
+    color: #d5d5d5;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    font-size: 1.000em;
+    font-weight: 400;
+    line-height: 1.65em;
+    overflow: hidden;
+}
+
+/*===================== default headings styles ===================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #eeeeee;
+    font-weight: 600;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 2.286em;
+    /* 32 pixels */
+}
+
+h2 {
+    font-size: 1.929em;
+    /* 27 pixels */
+}
+
+h3 {
+    font-size: 1.500em;
+    /* 21 pixels */
+}
+
+h4 {
+    font-size: 1.286em;
+    /* 18 pixels */
+}
+
+h5 {
+    font-size: 1.000em;
+    /* 16 pixels */
+}
+
+h6 {
+    font-size: 0.875em;
+    /* 14 pixels */
+}
+
+a {
+    text-decoration: none;
+    color: #09c;
+    transition: all .3s ease-in-out;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/*===================== btn-primary styles ===================== */
+.btn-primary {
+    display: inline-block;
+    padding: 0.8em 2.1em;
+    margin-bottom: 0.75em;
+    font-size: 1em;
+    line-height: 1.2em;
+    border: 0;
+    outline: 0;
+    border: 2px solid #04b4e0;
+    border-radius: 30px;
+    color: #f5f5f5;
+    transition: all .3s ease-in-out;
+}
+
+/*===================== section page styles ===================== */
+.section-page {
+    background-color: #222;
+    border-radius: 30px;
+    padding: 60px 60px 30px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* overflow-x: hidden; */
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    border: 1px solid #444;
+    flex: 0 0 48%;
+    margin-right: 2%;
+    padding: 0.875em 0.5em;
+    overflow-x: hidden;
+    border-radius: 8px;
+
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.page-title {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.section-content {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*===================== page styles ===================== */
+.page {
+    display: block;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 0 100px;
+    overflow: hidden;
+}
+
+/*===================== page styles end ===================== */
+/*===================== page-content styles ===================== */
+.page-content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 80vh;
+    margin: 10vh auto;
+    padding: 0;
+    background-color: #444;
+    border-radius: 2.286em;
+    display: flex;
+}
+
+/*===================== page content styles end ===================== */
+/*===================== header styles start ===================== */
+.header {
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+    min-height: inherit;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 30px 20px 25px;
+    text-align: center;
+}
+
+.header-photo {
+    margin: 0 auto 30px;
+    width: 150px;
+}
+
+.header-photo img {
+    max-width: 100%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    display: block;
+    border-radius: 50%;
+
+}
+
+.header-title h2 {
+    font-weight: 600;
+    margin: 5px 0 7px;
+    line-height: 1.2em;
+}
+
+.header-title h4 {
+    font-weight: 600;
+    margin: 5px 0 7px;
+    line-height: 1.2em;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links ul.links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links .links li {
+    display: inline-block;
+}
+
+.social-links .links li a {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    line-height: 30px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.social-links .links li a:hover {
+    background-color: #04b4e0;
+    opacity: 1;
+}
+
+.header-button {
+    margin-top: 50px;
+}
+
+.header-button .btn-primary {
+    border-color: hsl(0, 0%, 96%);
+    color: #f5f5f5;
+}
+
+.header-button .btn-primary:hover {
+    background-color: #fff;
+    color: #04b4e0;
+    border-color: #fff;
+}
+
+.footer {
+    padding: 20px 10px 15px;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: center;
+    color: #bbb;
+}
+
+/*===================== header styles end ===================== */
+
+/*===================== content area styles start ===================== */
+.content-area {
+    width: 100%;
+    max-width: calc(100% - 350px);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+}
+
+/*===================== home page styles ===================== */
+.content-area .vcenter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    align-content: stretch;
+}
+
+.vcenter .title-block {
+    text-align: center;
+}
+
+.vcenter .title-block h1 {
+    margin: 0 0 10px;
+}
+
+/*===================== home page styles end ===================== */
+
+/*===================== about page styles start ===================== */
+.page-title h2 span {
+    color: #04b4e0;
+}
+
+.desc {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.desc p {
+    font-size: 0.9375em;
+}
+
+.info-list {
+    flex: 0 0 38.333333%;
+    max-width: 38.333333%;
+    padding: 0 8px;
+}
+
+.info-list .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-list .list li {
+    margin-bottom: 10px;
+    font-size: 0.9375em;
+}
+
+.info-list .list li .title {
+    color: #04b4e0;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.fun-facts-container .sub-title {
+    display: inline-block;
+    padding: 0 15px 10px 0;
+    margin-bottom: 30px;
+}
+
+.fun-facts-container .sub-title h3 span {
+    color: #04b4e0;
+}
+
+.fun-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0 10px;
+}
+
+.fun-fact {
+    width: 100%;
+    background-color: #333;
+    border: 2px solid #444;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fun-fact i {
+    font-size: 2.5em;
+    color: #04b4e0;
+}
+
+.fun-fact h4 {
+    font-size: 1em;
+    margin: 15px;
+}
+
+.fun-fact span.fun-value {
+    font-size: 2.5em;
+    color: #aaa;
+    margin: 15px 0 10px;
+    display: block;
+    line-height: 50px;
+}
+
+/*===================== about page styles end ===================== */
+
+/*===================== resume page styles start ===================== */
+.timeline-title-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.education-title,
+.experience-title {
+    width: 50%;
+}
+
+.education-timeline,
+.experience-timeline {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 50%;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.timeline-item {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 0.875em;
+}
+
+.timeline-item .left-part {
+    width: 30%;
+    display: table-cell;
+    padding-right: 30px;
+    min-height: 100%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.left-part h6 {
+    font-weight: 500;
+}
+
+.timeline-item .divider {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #444;
+}
+
+.timeline-item .divider::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    display: block;
+    background-color: #04b4e0;
+    margin-left: -8px;
+    top: 4px;
+    border-radius: 10px;
+    opacity: .25;
+    z-index: 0;
+}
+
+.timeline-item .divider::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+    border: 2px solid #04b4e0;
+    display: block;
+    margin-left: -4px;
+    margin-top: 8px;
+    z-index: 1;
+}
+
+.timeline-item .right-part {
+    display: table-cell;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 70%;
+    vertical-align: top;
+}
+
+.right-part h5 {
+    font-weight: 600;
+}
+
+/*===================== resume page styles end ===================== */
+
+/*===================== skills page styles start ===================== */
+.skills-page .section-content {
+    display: flex;
+}
+
+.skills-page .row-container {
+    justify-content: space-evenly;
+}
+
+.skills-column {
+    width: 48%;
+    margin-left: 1%;
+    min-height: initial;
+    border: 1px solid #444;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.frontend-icon,
+.backend-icon {
+    margin-bottom: 30px;
+}
+
+.skills-page li {
+    display: inline-block;
+    margin: 5px 5px;
+    text-transform: capitalize;
+    padding: 0 5px;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+
+.skills-page li::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 8px;
+    border-radius: 6px;
+    background-color: #04b4e0;
+    margin-left: -10px;
+    opacity: 0.9;
+}
+
+.frontend-skills {
+    list-style: none;
+}
+
+/*===================== skills page styles end ===================== */
+
+/*===================== contact page styles start ===================== */
+.contact input,
+textarea,
+input {
+    display: block;
+    width: 100%;
+    padding: 0.785em 0.3125em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #04b4e0;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.contact input[type=submit] {
+    cursor: pointer;
+    margin-top: 1.5em;
+    transition: all .3s ease-in-out;
+}
+
+.contact input[type=submit]:hover {
+    background-color: #04b4e0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 280px;
+    gap: 5px;
+    grid-template-columns: repeat(4) 1fr;
+    justify-content: center;
+}
+
+.grid-column {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #444;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.grid-column i {
+    font-size: 1.5em;
+    color: #04b4e0;
+    font-weight: 600;
+}
+
+/*===================== contact page styles end ===================== */
+
+
+/*===================== content area styles end ===================== */
